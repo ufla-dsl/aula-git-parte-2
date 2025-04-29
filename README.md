@@ -24,6 +24,23 @@ func main() {
 }
 ```
 
+Aplicação de Exemplo
+----
+Foi desenvolvida uma aplicação de exemplo para demonstrar o uso da biblioteca. A aplicação recebe um valor de temperatura como parâmetro e imprime a conversão para as diferentes escalas disponíveis.
+
+Para executar:
+```bash
+go run ./app/exemplo.go 100
+```
+
+Saída esperada:
+```
+100°C = 212°F
+100°F = 37.77778°C
+```
+
+O código da aplicação de exemplo está disponível no diretório [app/exemplo.go](app/exemplo.go).
+
 Outras linguagens?
 ----
 Versões da biblioteca *tempconv* para outras linguagens:
