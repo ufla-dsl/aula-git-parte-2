@@ -29,6 +29,22 @@ func main() {
 }
 ```
 
+Aplicação de exemplo
+----
+O repositório inclui uma aplicação de exemplo (`app.go`) que demonstra a conversão de temperaturas entre as escalas Celsius e Fahrenheit.
+
+Para executar a aplicação, forneça um valor de temperatura como parâmetro:
+
+```
+go run ./app 100
+```
+
+Saída esperada:
+```
+100°C = 212°F
+100°F = 37.78°C
+```
+
 Outras linguagens?
 ----
 Versões da biblioteca *tempconv* para outras linguagens:
