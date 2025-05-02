@@ -45,3 +45,13 @@ Licença
 Como contribuir?
 ----
 Escolha uma *issue* dentre as [disponíveis](https://github.com/ufla-gcc259/aula-git-parte-2/issues), avise à comunidade que você está trabalhando nela e envie um *Pull Request*, quando terminar.
+
+## Exemplo de uso
+
+Este projeto inclui uma aplicação de exemplo que converte temperaturas entre Celsius e Fahrenheit.
+
+### Como executar:
+
+```bash
+go run ./app 100
+
