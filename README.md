@@ -45,3 +45,21 @@ Licença
 Como contribuir?
 ----
 Escolha uma *issue* dentre as [disponíveis](https://github.com/ufla-gcc259/aula-git-parte-2/issues), avise à comunidade que você está trabalhando nela e envie um *Pull Request*, quando terminar.
+
+### Modo interativo
+
+Você também pode executar a aplicação em modo interativo, escolhendo a conversão:
+
+```bash
+go run ./app/interativo.go
+
+Saída esperada
+Escolha uma opção:
+1 - Celsius para Fahrenheit
+2 - Fahrenheit para Celsius
+> 1
+
+Digite o valor:
+> 100
+
+100.00°C = 212.00°F
