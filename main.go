@@ -1,28 +1,12 @@
-package main
-
+ 
 import (
 	"fmt"
-	"os"
-	"strconv"
 
-	"raynnertaniguch1 /tempconv/tempconv"
+
+
+	"github.com/ufla-gcc259/aula-git-parte-2/tempconv"
 )
 
 func main() {
-	if len(os.Args) != 2 {
-		fmt.Println("Uso: go run ./app <temperatura>")
-		return
-	}
-
-	valor, err := strconv.ParseFloat(os.Args[1], 64)
-	if err != nil {
-		fmt.Println("Erro: argumento inválido. Use um número.")
-		return
-	}
-
-	c := tempconv.Celsius(valor)
-	f := tempconv.Fahrenheit(valor)
-
-	fmt.Printf("%s = %s\n", c, tempconv.CToF(c))
-	fmt.Printf("%s = %s\n", f, tempconv.FToC(f))
-}
+	fmt.Printf("Que frio! %v\n", tempconv.AbsoluteZeroC)
+	fmt.Printf("Fervendo! %v\n", tempconv.CToF(tempconv.BoilingC))
