@@ -4,16 +4,11 @@ Biblioteca escrita em Go para conversões simples de temperatura. Extraída do l
 
 Como usar?
 ----
-Para rodar o programa localmente e entender o que ele faz, siga os passos abaixo:
+Faça o download da biblioteca:
 
-1. Clone este repositório, entre no seu diretório e rode o programa
+`go get https://github.com/ufla-gcc259/aula-git-parte-2@v1.0.1`
 
-git clone https://github.com/ufla-dsl/aula-git-parte-2.git
-
-cd aula-git-parte-2
-
-go run main.go
-
+Pronto, agora é só usar:
 ```go
 package main
 
@@ -33,7 +28,39 @@ Outras linguagens?
 ----
 Versões da biblioteca *tempconv* para outras linguagens:
 
-> *Todo*
+Python
+
+ class TempConv:
+ 
+    ABSOLUTE_ZERO_C = -273.15
+    BOILING_C = 100.0
+    
+    @staticmethod
+    def celsius_para_fahrenheit(celsius):
+        return celsius * 9/5 + 32
+
+Exemplo de uso:
+
+print(f"Que frio! {TempConv.ABSOLUTE_ZERO_C}°C")  # Que frio! -273.15°C
+
+print(f"Fervendo! {TempConv.celsius_para_fahrenheit(TempConv.BOILING_C)}°F")  # Fervendo! 212°F
+
+Pseudo-codigo
+
+INICIO
+
+    CONSTANTE ABSOLUTE_ZERO_C <- -273.15
+    
+    CONSTANTE BOILING_C <- 100.0
+
+    FUNÇÃO celsius_para_fahrenheit(celsius)
+        RETORNAR (celsius * 9/5) + 32
+    FIM FUNÇÃO
+
+    ESCREVER "Que frio!", ABSOLUTE_ZERO_C, "°C"
+    ESCREVER "Fervendo!", celsius_para_fahrenheit(BOILING_C), "°F"
+FIM
+
 
 
 Licença
